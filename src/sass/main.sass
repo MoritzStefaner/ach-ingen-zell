@@ -1,0 +1,62 @@
+$textCol: #997777
+
+html, body
+	color: $textCol
+	font-family: "Avenir Next", "Helvetica Neue", Arial, sans
+	background-color: #DFDADA
+	padding: 0 1em
+	color: darken($textCol, 20)
+	line-height: 1.4
+
+h1, p
+	margin: .25rem 0 0
+	background: #FFF
+	float: left
+	clear: both
+	padding: .25rem
+	max-width: 40em
+
+a
+	text-decoration: none
+	color: #D68185
+
+#app
+	clear: both
+	padding: 2em 0
+	.map-tile
+		float: left
+		margin: 1px
+		width: 260px
+		height: 400px
+		background-color: #FFF
+		position: relative
+		svg
+			position: absolute
+			bottom: 35px
+			left: 30px
+			z-index: 0
+
+		h2, h3, h4
+			margin: 0
+			padding: 0
+			font-weight: 400
+			text-align: center
+			width: 100%
+
+		h2
+			font-size: 1.75em
+			margin-top: 10px
+
+		h3
+			font-size: .85em
+			position: absolute
+			bottom: 10px
+
+		h4
+			font-size: .85em
+			color: lighten($textCol, 20)
+			z-index: 2
+			position: relative
+			padding: 0 10px
+			font-style: italic
+			width: calc(100% - 20px)
