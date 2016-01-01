@@ -42,10 +42,6 @@ module.exports = {
   plugins: [
     new CopyWebpackPlugin([
       {
-        from: './assets',
-        to: 'assets'
-      },
-      {
         from: './data',
         to: 'data'
       },
