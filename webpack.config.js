@@ -3,15 +3,12 @@ var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   context: __dirname + "/src",
-  entry: {
-    javascript: "./jsx/main.jsx",
-    html: "./html/index.html"
-  },
+  entry: "./jsx/main.jsx",
   output: {
     path: path.join(__dirname, 'build'),
     filename: 'js/app.js'
   },
-  devtool: 'inline-source-map',
+  devtool: 'source-map',
   resolve: {
     extensions: ['', '.js', '.jsx'],
     modulesDirectories: ["src/jsx", "node_modules"]
@@ -51,6 +48,10 @@ module.exports = {
       {
         from: './data',
         to: 'data'
+      },
+      {
+        from: './html',
+        to: '.'
       }
     ])
   ]
