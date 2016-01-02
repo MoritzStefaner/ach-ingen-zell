@@ -40,7 +40,7 @@ This sequence of commands
 This is my first project using [webpack](http://webpack.github.io) as a build tool, so if you have any ideas on how to improve, let me know.  
 
 ## ES2015
-- This project uses [babel](https://babeljs.io/) to compile [ES2015](https://babeljs.io/docs/learn-es2015/) (the first step towards a revamped JavaScript). While I really enjoy [coffeescript](http://coffeescript.org)’s conciseness, ES2015 seems to provide a saner foundation for larger projects.
+This project uses [babel](https://babeljs.io/) to compile [ES2015](https://babeljs.io/docs/learn-es2015/) (the first step towards a revamped JavaScript). While I really enjoy [coffeescript](http://coffeescript.org)’s conciseness, ES2015 seems to provide a saner foundation for larger projects.
 
 ## React
 [React](https://facebook.github.io/react/) provides a clean and efficient way to structure and render web applications. As demonstrated in this small example, it can even replace d3 as an SVG rendering tool. React is pretty great in rendering complex nested DOM trees or UIs, but it seems a bit harder to develop very fluid, animated interfaces. 
