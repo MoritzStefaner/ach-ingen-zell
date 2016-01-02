@@ -54,6 +54,6 @@ The ways d3 and react handle interaction and animation are quite different, so, 
 Along with ES2015 comes a clearly defined way to specify internal and external script dependencies. For instance, the once monolithic d3 library is currently being [split up into modules](https://github.com/mbostock/d3/issues/2461), which allows to install independent parts of the library using e.g. [npm](https://www.npmjs.com) and declare a dependency on them in your scripts (e.g. ```import d3_scale from 'd3-scale’;```). Webpack will pick these dependencies up and bundle all (and only) the required code into your script.
 
 ## Feedback
-This was just a quick experiment and excursion of mine into a few techniques I wanted to explore. I hope some of these are interestifn to you, too — [let me know](https://github.com/MoritzStefaner/ach-ingen-zell/issues/1) if you have any thoughts or questions! 
+This was just a quick experiment and excursion of mine into a few techniques I wanted to explore. I hope some of these are interesting to you, too — [let me know](https://github.com/MoritzStefaner/ach-ingen-zell/issues/1) if you have any thoughts or questions! 
 
 
