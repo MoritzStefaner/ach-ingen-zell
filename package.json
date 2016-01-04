@@ -4,6 +4,10 @@
   "version": "0.1.0",
   "description": "",
   "repository": "",
+  "scripts": {
+    "dev": "webpack-dev-server --devtool source-map",
+    "deploy": "NODE_ENV=production webpack -p"
+  },
   "devDependencies": {
     "babel-core": "^6.3.26",
     "babel-loader": "^6.2.0",

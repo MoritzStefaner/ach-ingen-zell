@@ -8,7 +8,6 @@ module.exports = {
     path: path.join(__dirname, 'build'),
     filename: 'js/app.js'
   },
-  devtool: 'source-map',
   resolve: {
     extensions: ['', '.js', '.jsx'],
     modulesDirectories: ["src/jsx", "node_modules"]
