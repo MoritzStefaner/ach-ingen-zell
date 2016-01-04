@@ -9,7 +9,7 @@ import d3_hexbin from 'd3-hexbin';
 import App from 'App';
 import suffixList from 'SuffixList';
 
-require("../sass/main.sass");
+import "../sass/main.sass";
 
 const projection = d3_geo.geo
 	.mercator()
@@ -26,25 +26,30 @@ const hexbin = d3_hexbin.hexbin()
 ;
 
 d3_request.csv("data/placenames_de.tsv", (d)=> {
-
 	d.forEach((x)=>{
 		x.label = x.name;
+		// project geo to screen coordinates
 		[x.x, x.y] = projection([+x.longitude, +x.latitude]);
 	});
 
 	let hbData = hexbin(d);
+
+	// unique IDs for bins
 	hbData.forEach((x)=>{
 		x.id =  `${x.i}/${x.j}`;
 	});
 
+	// sort alphabetically by first suffix in list
 	suffixList.sort((a,b)=>{
 		if(a[0]>b[0]) return 1;
 		if(a[0]<b[0]) return -1;
 		return 0;
 	});
 
+
 	ReactDOM.render(
 		<App suffixList={suffixList} data={hbData}/>,
 		document.getElementById('app')
 	);
+
 });
