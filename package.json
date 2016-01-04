@@ -5,7 +5,7 @@
   "description": "",
   "repository": "",
   "scripts": {
-    "dev": "webpack-dev-server",
+    "dev": "webpack-dev-server --devtool source-map",
     "deploy": "NODE_ENV=production webpack -p"
   },
   "devDependencies": {
