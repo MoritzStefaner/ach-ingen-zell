@@ -18,7 +18,7 @@ export default class Map extends React.Component {
     this.props.data.forEach((x)=>{
       // for each bin
 
-      const myRegexp = new RegExp(this.props.suffix.join('$|') + '$');
+      const myRegexp = new RegExp(this.props.suffix.join('$|') + '$', 'i');
 
       // count matches with suffix
       let hits = x.filter((y)=> y.label.match(myRegexp));
