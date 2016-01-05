@@ -7,6 +7,9 @@ export default class Map extends React.Component {
 
     // percentage of suffix ocurring in each bin
     let percentages = {};
+
+    let placenames = {};
+
     // max percentage (for defining the color scale)
     let maxPercent = 0;
     // total number of places with suffix
@@ -18,10 +21,13 @@ export default class Map extends React.Component {
       const myRegexp = new RegExp(this.props.suffix.join('$|') + '$');
 
       // count matches with suffix
-      let count = x.filter((y)=> y.label.match(myRegexp)).length;
+      let hits = x.filter((y)=> y.label.match(myRegexp));
+      let count = hits.length;
 
       totalCount += count;
       percentages[x.id] = count/x.length;
+
+      placenames[x.id] = `${percentages[x.id].toFixed(3)}% of place names have suffix \'${this.props.suffix[0]}\' or variations: ${hits.map((y)=> y.label).join(", ")}`;
       // count only bins with at least 20 villages or towns for color scale maximum
       if(x.length>20) {
         maxPercent = Math.max(maxPercent, percentages[x.id]);
@@ -33,7 +39,14 @@ export default class Map extends React.Component {
   	let dots = this.props.data.map((x)=>{
       // one dot per bin
   		let col = colorScale(percentages[x.id]);
-  		return <circle key={x.id} cx={x.x} cy={x.y} r="2.5" style={{"fill": col}}/>;
+      if(percentages[x.id]>0){
+        return <circle key={x.id} cx={x.x} cy={x.y} r="2.5" style={{"fill": col}}>
+        <title>{placenames[x.id]}</title>
+        </circle>;
+      } else {
+        return <circle key={x.id} cx={x.x} cy={x.y} r="2.5" style={{"fill": col}}></circle>;
+      }
+
   	});
 
     let mainLabel = this.props.suffix[0];
