@@ -9,14 +9,18 @@ Yet, it's a dataset I always found interesting to explore and some of the maps a
 Run
 ```
 npm install
-webpack-dev-server
 ```
-to build and run a local development version
+to install all required node.js packages
 
 Run
 ```
-npm install
-webpack -p
+npm run dev
+```
+to build a development version and serve it from [http://localhost:8080/](http://localhost:8080/)
+
+Run
+```
+npm run deploy
 ```
 to build a deployment version (into the build directory)
 
