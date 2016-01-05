@@ -56,6 +56,7 @@ const suffixList = [
 		// ["ley"],
 		["loh", "lah", "loch", "loy"],
 		["mar"],
+		["grün"],
 		// ["mund", "münde", "müde", "müden", "muid", "muide"],
 		// ["münster"],
 		["rod", "roda", "rodt", "rode", "raht", "rath", "rade", "reut", "reuth", "reute", "ried", "ruit", "ray"],
