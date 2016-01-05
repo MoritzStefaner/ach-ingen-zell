@@ -1,6 +1,8 @@
 # -ach, -ingen, -zell
 A visual exploration of the spatial patterns in the endings of German town and village names.
 
+See the live version at [http://truth-and-beauty.net/experiments/ach-ingen-zell](http://truth-and-beauty.net/experiments/ach-ingen-zell)
+
 I picked the most interesting suffixes from [https://de.wikipedia.org/wiki/Ortsname](https://de.wikipedia.org/wiki/Ortsname) and cross-referenced them with a list of place names from [geonames](http://www.geonames.org/export/). Please note that the approach is fairly naive: I don’t test for syllables but only match the string ending (i.e. -ach matches Kirchbach).
 
 Yet, it's a dataset I always found interesting to explore and some of the maps are already quite interesting; plus, this quick experiment gave me the opportunity to play a bit with a few new tools and libraries I wanted to learn more about.
@@ -45,6 +47,9 @@ This is my first project using [webpack](http://webpack.github.io) as a build to
 
 ## ES2015
 This project uses [babel](https://babeljs.io/) to compile [ES2015](https://babeljs.io/docs/learn-es2015/) (the first step towards a revamped JavaScript). While I really enjoy [coffeescript](http://coffeescript.org)’s conciseness, ES2015 seems to provide a saner foundation for larger projects.
+
+## d3 with hexbin plugin
+I use the new modularized version of [d3](http://d3js.org/) with  the wonderful new [color scales](https://www.npmjs.com/package/d3-scale#sequential-color-scales) and the lovely [h3-hexbin plugin](https://www.npmjs.com/package/d3-hexbin/) which made it a breeze to create the hexmaps.
 
 ## React
 [React](https://facebook.github.io/react/) provides a clean and efficient way to structure and render web applications. As demonstrated in this small example, it can even replace d3 as an SVG rendering tool. React is pretty great in rendering complex nested DOM trees or UIs, but it seems a bit harder to develop very fluid, animated interfaces.
