@@ -29,6 +29,8 @@ to build a deployment version (into the build directory)
 # Remixes and adaptations
 - [Slovenian adaptation](http://virostatiq.com/dnevnik/suffix-suffer/#)
 - [Interactive version](http://bgrsquared.com/townsGermany/)
+- [Remix using R](http://rud.is/b/2016/01/03/zellingenach-a-visual-exploration-of-the-spatial-patterns-in-the-endings-of-german-town-and-village-names-in-r/)
+- [Dutch version, based on above R remix](http://www.brabantsewijnbouwers.nl/uvh/NLtoponiemen.html)
 
 # Tools used
 
