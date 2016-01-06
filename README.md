@@ -26,6 +26,9 @@ npm run deploy
 ```
 to build a deployment version (into the build directory)
 
+# Remixes and adaptations
+- (Slovenian adaptation)[http://virostatiq.com/dnevnik/suffix-suffer/#]
+- (Interactive version)[http://bgrsquared.com/townsGermany/]
 
 # Tools used
 
