@@ -9,7 +9,9 @@ import d3_hexbin from 'd3-hexbin';
 import App from 'App';
 import suffixList from 'SuffixList';
 
+import "../html/index.html";
 import "../sass/main.sass";
+import placenamesPath from "file!../data/placenames_de.tsv"
 
 const projection = d3_geo.geo
 	.mercator()
@@ -25,7 +27,7 @@ const hexbin = d3_hexbin.hexbin()
 	.radius(3)
 ;
 
-d3_request.csv("data/placenames_de.tsv", (d)=> {
+d3_request.csv(placenamesPath, (d)=> {
 	d.forEach((x)=>{
 		x.label = x.name;
 		// project geo to screen coordinates
