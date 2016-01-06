@@ -1,7 +1,7 @@
 const suffixList = [
 		// ["ach", "ich", "ig", "icht", "igt", "at", "et", "it", "es", "is"],
 		["hütte"],
-		["reute"],
+		// ["reute"],
 		["ede"],
 		["ich"],
 		["in"],
