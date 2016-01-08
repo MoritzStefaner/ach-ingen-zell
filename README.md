@@ -24,10 +24,11 @@ Run
 ```
 npm run deploy
 ```
-to build a deployment version (into the build directory)
+to build a deployment version into the build directory, which can be uploaded to a normal web server, no server side scripts or settings re required to run the application.
 
 # Remixes and adaptations
 - [Slovenian adaptation](http://virostatiq.com/dnevnik/suffix-suffer/#)
+- [Romanian version](https://static.l3vi.de/esti-ov-oara/)
 - [Interactive version](http://bgrsquared.com/placeNames/)
 - [Remix using R](http://rud.is/b/2016/01/03/zellingenach-a-visual-exploration-of-the-spatial-patterns-in-the-endings-of-german-town-and-village-names-in-r/)
 - [Dutch version, based on above R remix](http://www.brabantsewijnbouwers.nl/uvh/NLtoponiemen.html)
