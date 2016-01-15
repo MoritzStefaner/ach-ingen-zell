@@ -32,6 +32,7 @@ to build a deployment version into the build directory, which can be uploaded to
 - [-tation](http://darthmall.github.io/-tation/) (Antarctica version!)
 - [US version](http://virostatiq.com/data-visualizations/us-suffix-density/)
 - [Belarus version](http://trafimovi.ch/city-and-village-names/)
+- [Czech version](https://devel.finwe.info/ova-ska-ice/)
 - [Interactive version](http://bgrsquared.com/placeNames/)
 - [Remix using R](http://rud.is/b/2016/01/03/zellingenach-a-visual-exploration-of-the-spatial-patterns-in-the-endings-of-german-town-and-village-names-in-r/)
 - [Dutch version, based on above R remix](http://www.brabantsewijnbouwers.nl/uvh/NLtoponiemen.html)
