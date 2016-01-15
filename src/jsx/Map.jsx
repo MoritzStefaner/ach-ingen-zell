@@ -27,7 +27,7 @@ export default class Map extends React.Component {
       totalCount += count;
       percentages[x.id] = count/x.length;
 
-      placenames[x.id] = `${percentages[x.id].toFixed(3)}% of place names have suffix \'${this.props.suffix[0]}\' or variations: ${hits.map((y)=> y.label).join(", ")}`;
+      placenames[x.id] = `${percentages[x.id].toFixed(3)}% of place names have suffix \'${this.props.suffix[0]}\' or variations: ${hits.map((y)=> y.label).filter(function(value, index, self) {return self.indexOf(value) === index;}).join(", ")}`;
       // count only bins with at least 20 villages or towns for color scale maximum
       if(x.length>20) {
         maxPercent = Math.max(maxPercent, percentages[x.id]);
